@@ -56,8 +56,9 @@ const ShoeCard = ({
 const Link = styled.a`
   text-decoration: none;
   color: inherit;
-
+  min-width: 312px;
   
+  flex: 1;
   flex-wrap: wrap;
   
 `;
@@ -81,7 +82,7 @@ const Flag = styled.div`
 
 const ImageWrapper = styled.div`
   position: relative;
-  width: 312px;
+  
 `;
 
 const Image = styled.img`
@@ -102,7 +103,8 @@ const Name = styled.h3`
 `;
 
 const Price = styled.span`
-text-decoration: ${props=>props.variant === 'on-sale'? 'line-through': 'none'}
+text-decoration: ${props=>props.variant === 'on-sale'? 'line-through': 'none'};
+color: ${props=>props.variant === 'on-sale'? COLORS.gray[700]: COLORS.gray[900]};
 `;
 
 const ColorInfo = styled.p`

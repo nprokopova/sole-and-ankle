@@ -15,7 +15,7 @@ const ShoeGrid = () => {
 };
 
 const Wrapper = styled.div`
-width: 100%;
+
 height: auto;
 display: flex;
 flex-wrap:wrap;
